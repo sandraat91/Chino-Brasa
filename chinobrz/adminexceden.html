@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Excedentes</title>
+    <link rel="stylesheet" href="css/admiexce.css">
+    <link rel="icon" href="images/pollo-icon.png">
+</head>
+<body>
+    <!-- header section starts -->
+    <header class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+                <a class="navbar-brand" href="welcome.html">
+                    <span>
+                        🍗 Chino Brasa 🍗
+                    </span>
+                </a>
+                <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="admiproduc.html">Administrar Productos</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="adminexceden.html">Administrar Excedentes <span class="sr-only"></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- end header section -->
+
+    <main>
+        <section class="excess-form">
+            <div class="excess-preview">
+                <!-- Aquí se agregarán dinámicamente los excentes -->
+            </div>
+            <div class="excess-info">
+                <form id="excess-form" action="upload_excedentes.php" method="post" enctype="multipart/form-data">
+                    <input type="text" id="excess-id" placeholder="Id">
+                    <input type="text" id="excess-name" placeholder="Nombre">
+                    <textarea id="excess-description" placeholder="Descripción"></textarea>
+                    <input type="text" id="excess-price" placeholder="Precio">
+                    <input type="file" id="excess-image" accept="image/*">
+                    <button type="submit">Agregar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="excess-actions">
+            <input type="text" id="search-excess-id" placeholder="Id"style="margin-bottom: 20px;">
+            <button id="search-excess-btn">Buscar</button>
+            <button id="edit-excess-btn">Editar</button>
+            <button id="delete-excess-btn">Eliminar</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2024 🍗 El Chino Brasa 🍗</p>
+    </footer>
+
+    <script src="js/administrar_excedentes.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <!-- LETRAS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Teachers:ital@0;1&display=swap" rel="stylesheet">
+  
+  <title>🍗Chino Brasa - Excedentes🍗</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Roboto:400,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />  <!-- DISEÑO EN CSS -->
+  <link href="css/sytless.css" rel="stylesheet"/>
+  <link href="css/excedente.css" rel="stylesheet"/>
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="icon" href="images\pollo-icon.png">
+</head>
+
+<body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              🍗Chino Brasa🍗
+            </span>
+          </a>
+          <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Pagina Principal <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html"> Menú </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html"> Mi pedido </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="contact.html">Excedentes</a>
+                </li>
+              </ul>
+            </div>
+            <img id="icon-cart" class="icon-cart" src="images/icon-cart.png" alt="icon-cart">
+            <span id="icon-cart-count">0</span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+  
+
+  <div style="height: 40px;"></div> <!-- Solo para agregar desplazamiento y poder ver el efecto de desplazamiento -->
+
+  <section class="surplus-presentation">
+    <div class="importance">
+      <img src="images/header_polleria.png" alt="fondo">
+      <p>En El Chino Brasa, creemos en la importancia de aprovechar al máximo nuestros recursos y 
+        contribuir positivamente a la comunidad. Por eso, hemos lanzado una iniciativa innovadora 
+        para reducir el desperdicio de alimentos y ofrecer opciones accesibles a aquellos que más lo necesitan.</p>
+    </div>
+    
+    <div class="commitment">
+      <div class="middle-text">
+        <h2>COMPROMISO</h2>
+        <h4>con la Sostenibilidad y la Comunidad</h4>
+        <P>Diariamente, ponemos a su disposición los excedentes frescos de nuestros productos de pollo,
+          asegurando que alimentos de alta calidad no terminen en la basura. Estos productos se ofrecen
+          a un precio mínimo, haciéndolos accesibles para personas de bajos recursos que tienen dificultades
+          para acceder a alimentos nutritivos.</P>
+      </div>
+      <div class="middle-text">
+        <h2>BENEFICIOS</h2>
+        <h4>de Nuestra Iniciativa</h4>
+        <P>1. Reducción del Desperdicio: Aprovechamos todos nuestros productos para evitar el desperdicio innecesario de alimentos.</P>
+        <P>2. Accesibilidad: Ofrecemos precios significativamente reducidos, asegurando que todos puedan disfrutar de alimentos saludables.</P>
+        <P>3. Apoyo a la Comunidad: Ayudamos a mejorar la seguridad alimentaria de las familias locales.</P>
+      </div>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="middle-text">
+      <h2>EXCEDENTES</h2>
+      <h4>Productos en buen estado y ¡A precios a tu alcance!</h4>
+    </div>
+    <div class="listProduct" id="listProductExcedentes"></div>
+  </section>
+
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+      Copyright &copy; 2024 🍗 El Chino Brasa 🍗
+
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/excedente.js"></script>
+  
+
+  <div class="overlay" id="overlay"></div>
+    <div class="cartTab">
+      <h1>Tu carrito</h1>
+      <div class="listCart"></div>
+      <div class="btn">
+          <button class="vaciar">Vaciar</button>
+          <div id="notification" style="display: none;">
+              <p>Se eliminarán los productos del carrito. ¿Desea continuar?</p>
+              <button id="confirmVaciar">Sí</button>
+              <button id="cancelVaciar">No</button>
+          </div>
+          <button class="close" onclick="toggleCart()">X</button>
+          <button class="dirreccionar" onclick="direccionar()">Ir a pagar</button>
+      </div>
+  </div>
+
+  
+</body>
+
+</html>

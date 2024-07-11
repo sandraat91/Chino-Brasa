@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #ffffff; /* Fondo de color */
+}
+
+main {
+    width: 80%; /* Ajusta el valor según tus necesidades */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff3f3;
+}
+
+.img {
+    width: 300px; /* Ajusta este valor según el tamaño deseado */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+section {
+    margin: 20px 0;
+}
+
+h1, h2 {
+    color: #333333;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #A22417;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid #ffffff;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+}
+
+.social-media p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.social-media i {
+    margin-right: 10px;
+    color: #555555;
+}
+
+.social-media a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}

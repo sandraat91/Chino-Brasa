@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a Chino Brasa</title>
+    <link href="css/welcome.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" href="images\pollo-icon.png">
+</head>
+<body>
+    <main>
+        <section class="welcome">
+            <div>
+                <img src="images/chbrz-img.jpg" alt="Descripción de la imagen" class="img">
+              </div>
+            <h1>Bienvenido</h1>
+            <div class="buttons">
+                <button id="clienteBtn">Cliente</button>
+                <button id="adminBtn">Administrador</button>
+            </div>
+        </section>
+
+        <section class="social-media">
+            <h2>Síguenos en nuestras redes sociales</h2>
+            <p><i class="fab fa-instagram"></i> Instagram: <a href="https://instagram.com/elchinobrasa" target="_blank">@elchinobrasa</a></p>
+            <p><i class="fab fa-facebook"></i> Facebook: <a href="https://facebook.com/elchinobrasaperu" target="_blank">El Chino Brasa</a></p>
+            <p><i class="fab fa-tiktok"></i> TikTok: <a href="https://www.tiktok.com/@elchinobrasa" target="_blank">@elchinobrasa</a></p>
+        </section>
+    </main>
+
+    <!-- footer section -->
+        <section class="container-fluid footer_section">
+            <p>
+            Copyright &copy; 2024 🍗 El Chino Brasa 🍗
+
+            </p>
+        </section>
+    <!-- footer section -->
+
+    <script>
+        document.getElementById('clienteBtn').addEventListener('click', function() {
+            window.location.href = 'index.html'; // Redirigir a la página del menú
+        });
+
+        document.getElementById('adminBtn').addEventListener('click', function() {
+            window.location.href = 'admin.html'; // Redirigir a la página del administrador (asegúrate de tener esta página)
+        });
+    </script>
+</body>
+
+</html>

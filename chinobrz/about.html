@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!-- Basic -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <!-- Mobile Metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Site Metas -->
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <!-- LETRAS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&family=Teachers:ital@0;1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+      
+        <title>🍗Chino Brasa - Menú🍗</title>
+      
+        <!-- slider stylesheet -->
+        <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+      
+        <!-- bootstrap core css -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+      
+        <!-- Custom styles for this template -->
+        <link href="css/style.css" rel="stylesheet" /> <!-- diseño en css -->
+        <link href="css/sytless.css" rel="stylesheet"/>
+        <!-- responsive style -->
+        <link href="css/responsive.css" rel="stylesheet" />
+        <link rel="icon" href="images\pollo-icon.png">
+      </head>
+      
+      <body>
+        <div class="hero_area">
+          <!-- header section strats -->
+          <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                  <a class="navbar-brand" href="index.html">
+                    <span>
+                      🍗 Chino Brasa 🍗
+                    </span>
+                  </a>
+                  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+                      <ul class="navbar-nav  ">
+                        <li class="nav-item">
+                          <a class="nav-link" href="index.html">Página Principal <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active" id="menu-link">
+                          <a class="nav-link" href="about.html"> Menú </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="service.html"> Mi pedido </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="contact.html">Excedentes</a>
+                        </li>   
+                      </ul>
+                    </div>
+                      <img id="icon-cart" class="icon-cart" src="images/icon-cart.png" alt="icon-cart">
+                      <span id="icon-cart-count">0</span>
+                  </div>
+                </nav>
+              </div>
+          </header>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        <div class="cartTab">
+          <h1>Tu carrito</h1>
+          <div class="listCart"></div>
+          <div class="btn">
+              <button class="vaciar">Vaciar</button>
+              <div id="notification" style="display: none;">
+                  <p>Se eliminarán los productos del carrito. ¿Desea continuar?</p>
+                  <button id="confirmVaciar">Sí</button>
+                  <button id="cancelVaciar">No</button>
+              </div>
+              <button class="close">X</button>
+              <button class="dirreccionar" onclick="direccionar()">Ir a pagar</button>
+          </div>
+
+    </body>
+
+    </div>
+
+  <div style="height: 30px;"></div> <!-- Solo para agregar desplazamiento y poder ver el efecto de desplazamiento -->
+
+  <div class="navbar-container-custom">
+    <div class="navbar-custom">
+      <a href="#promociones" onclick="showCategory('promociones')">Promociones</a>
+      <a href="#combos" onclick="showCategory('combos')">Combos</a>
+      <a href="#mostros" onclick="showCategory('mostros')">Los Mostros</a>
+      <a href="#clasicos" onclick="showCategory('clasicos')">Clásicos</a>
+      <a href="#bebidas" onclick="showCategory('bebidas')">Bebidas</a>
+      <a href="#extras" onclick="showCategory('extras')">Extras</a>
+    </div>
+  </div>
+
+  <!-- Ejemplo de contenedor para mostrar todos los productos -->
+<div id="allProducts" class="section-custom">
+  <!-- Aquí se agregarán dinámicamente los productos -->
+</div>
+
+      <div id="promociones" class="section-custom" style="display: none;">
+        <h2>PROMOCIONES</h2>
+        <div class="listProduct" id="listProductPromociones"></div>
+      </div>
+      <div id="combos" class="section-custom" style="display: none;">
+        <h2>COMBOS</h2>
+        <div class="listProduct" id="listProductCombos"></div>
+      </div>
+      <div id="mostros" class="section-custom" style="display: none;">
+        <h2>LOS MOSTROS</h2>
+        <div class="listProduct" id="listProductMostros"></div>
+      </div>
+      <div id="clasicos" class="section-custom" style="display: none;">
+        <h2>CLÁSICOS</h2>
+        <div class="listProduct" id="listProductClasicos"></div>
+      </div>
+      <div id="bebidas" class="section-custom" style="display: none;">
+        <h2>BEBIDAS</h2>
+        <div class="listProduct" id="listProductBebidas"></div>
+      </div>
+      <div id="extras" class="section-custom" style="display: none;">
+        <h2>EXTRAS</h2>
+        <div class="listProduct" id="listProductExtras"></div>
+      </div>
+
+    <section class="container-fluid footer_section">
+      <p>
+        Copyright &copy; 2024 🍗 El Chino Brasa 🍗
+        <a href="https://html.design/"> </a>
+      </p>
+    </section>
+
+      <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.js"></script>
+
+    <script src="js/carrito.js"></script>
+    <script src="js/about.js"></script>
+    <script src="producto.js"></script>
+    <script src="js/vaciar.js"></script>
+    <script src="js/pedido.js"></script>
+    <script>
+      function showNotification() {
+      document.getElementById('overlay').style.display = 'block';
+      document.getElementById('notification').style.display = 'block';
+    }
+    
+    document.getElementById('confirmVaciar').addEventListener('click', function() {
+        // Lógica para vaciar el carrito
+        alert('Carrito vaciado');
+        hideNotification();
+    });
+    
+    document.getElementById('cancelVaciar').addEventListener('click', hideNotification);
+    
+    function hideNotification() {
+        document.getElementById('overlay').style.display = 'none';
+        document.getElementById('notification').style.display = 'none';
+    }
+    </script>
+  
+
+</html>

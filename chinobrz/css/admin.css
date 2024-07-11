@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Teachers';
+    src: url('fonts/Teachers.woff2') format('woff2'),
+         url('fonts/Teachers.woff') format('woff'),
+         url('fonts/Teachers.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Teachers', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.BloqueInicioSesion {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.BloqueInicioSesion h2 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.BloqueInicioSesion form {
+    margin-left: 13px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.BloqueInicioSesion label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.BloqueInicioSesion input[type="email"],
+.BloqueInicioSesion input[type="password"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    display: inline-block;
+    font-family: 'Teachers', sans-serif;
+}
+
+.BloqueInicioSesion .btnIniciarSesion {
+    margin-top: 3px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.BloqueInicioSesion .btnIniciarSesion input[type="submit"] {
+    background-color: rgb(175, 52, 39);
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    border-radius: 10px;
+    font-family: 'Teachers', sans-serif;
+}
+
+.BloqueInicioSesion .btnIniciarSesion input[type="submit"]:hover {
+    background-color: #A22417;
+}
+
+.BloqueInicioSesion .message {
+    margin-top: 0px;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 15px;
+    font-size: 13px;
+}
+
+.BloqueInicioSesion .message a {
+    color: rgb(0, 123, 255);
+    text-decoration: none;
+}
+
+.BloqueInicioSesion .message a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.container-fluid.footer_section {
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+}
+
+.container-fluid.footer_section p {
+    color: #171717;
+    margin: 0;
+    text-align: center;
+    border-top: 2px solid #040404; /* Línea roja encima del párrafo */
+    padding-top: 10px; /* Espacio entre la línea y el texto */
+}
+
+/*toggle password*/
+.inputWithButton {
+    position: relative;
+    width: calc(110% - 100px);
+    vertical-align: top; /* Alinear el contenedor verticalmente */
+}
+
+.inputWithButton input[type="password"] {
+    display: inline-block;
+    border-radius: 7px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+    
+}
+
+.inputWithButton button {
+    font-family: 'Teachers', sans-serif;
+    position: absolute;
+    top: 40%;
+    left: 250px;
+    transform: translateY(-50%);
+    width: 60px; /* Ancho del botón */
+    background-color: rgb(175, 52, 39);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.inputWithButton button:hover {
+    background-color: #b93426; /* Color de fondo oscuro al pasar el cursor */
+}

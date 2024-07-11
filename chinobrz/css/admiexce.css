@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Teachers", sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.header_section {
+    font-family: "Teachers", sans-serif;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-brand span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+}
+
+/* Main section styling */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.excess-preview {
+    width: 40%;
+    text-align: center;
+    background-color: #EAD4C3;
+    border: 1.5px solid #000000;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.excess-preview img {
+    max-width: 100%;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 70%;
+    border: 1.5px solid #000000;
+    border-radius: 10px;
+}
+
+.excess-preview p {
+    margin: 10px;
+}
+
+.excess-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.excess-preview h3 {
+    margin-bottom: 0.5rem;
+    font-size: large;
+    font-size: 1.75rem;
+    line-height: 1.2;
+}
+
+.excess-details p {
+    margin-bottom: 5px;
+}
+
+.excess-details .price {
+    letter-spacing: 7px;
+    font-size: small;
+    padding-bottom: 5px;
+}
+
+.excess-info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.excess-info form {
+    display: flex;
+    flex-direction: column;
+}
+
+.excess-info input,
+.excess-info textarea,
+.excess-info button {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.excess-info button {
+    background-color: #A22417;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.excess-info button:hover {
+    background-color: #a5211c;
+}
+
+.excess-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.excess-actions input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.excess-actions button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    width: 50%;
+}
+
+.excess-actions button {
+    background-color: #A22417;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.excess-actions button:hover {
+    background-color: #7c180d;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ccc;
+}

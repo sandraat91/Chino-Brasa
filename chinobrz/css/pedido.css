@@ -1,0 +1,465 @@
+body {
+    font-family: "Teachers", sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+  }
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+/*header section*/
+.sub_page .hero_area {
+    height: auto;
+  }
+  
+  .hero_area.sub_pages {
+    height: auto;
+  }
+  
+  .header_section {
+    background-color: #000000;
+    font-family: "Outfit", sans-serif;
+  }
+  
+  
+  .header_section .container-fluid {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  
+  .header_section .nav_container {
+    margin: 0 auto;
+  }
+
+  .custom_nav-container .navbar-nav .nav-item .nav-link {
+    font-family: "Teachers", sans-serif;
+    font-size: 17px;
+    padding: 10px 30px;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+  }
+
+  .custom_nav-container .navbar-nav .nav-item .nav-link::before {
+    content: "";
+    display: none;
+    position: absolute;
+    bottom: 7px;
+    left: 50%;
+    width: 17px;
+    height: 4px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background-color: #A22417;
+    border-radius: 5px;
+  }
+
+  .custom_nav-container .navbar-nav .nav-item .nav-link:hover::before {
+    display: block;
+  }
+  
+  .custom_nav-container .navbar-nav .nav-item.active a::before {
+    display: block;
+  }
+
+  a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: initial;
+}
+
+.btn,
+.btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.custom_nav-container .nav_search-btn {
+  background-image: url(../images/search-icon.png);
+  background-size: 22px;
+  background-repeat: no-repeat;
+  background-position-y: 7px;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border: none;
+}
+
+  .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .navbar-brand img {
+    width: 45px;
+    margin-right: 5px;
+  }
+
+  .navbar-brand span {
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  .custom_nav-container {
+    z-index: 99999;
+    padding: 5px 0;
+  }
+
+  .custom_nav-container .navbar-toggler {
+    outline: none;
+  }
+  
+  .custom_nav-container .navbar-toggler .navbar-toggler-icon {
+    background-size: 42px;
+  }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.detalles-pago, .mi-pedido {
+    width: 48%;
+    padding: 30px;
+}
+
+
+h1 {
+    background-color: #A22417;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    padding-left: 25px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+}
+
+.section {
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 25px;
+}
+
+.selected-method {
+    color:#A22417;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.payment-methods img {
+    margin: 5px;
+    width: 70px; /* Ancho */
+    height: 40px; /* Alto */
+}
+
+.qr-code img {
+    margin: 5px;
+    width: 260px; /* Ancho */
+    height: 260px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 5px 0;
+}
+
+form input {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #A22417;
+    border-radius: 5px;
+}
+
+.qr-code img {
+    max-width: 260px;
+    margin: 10px 0;
+}
+
+
+
+.platillos {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  align-content: flex-start;
+
+  
+}
+
+
+.platillos {
+  display: flex;
+  align-items: center;
+  background-color: #EAD4C3;
+  padding: 10px;
+  border: 1.5px solid #A22417;
+  border-radius: 15px;
+  margin-bottom: 10px;
+  width: 100%; /* Establecer el ancho igual para todos los platos */
+  
+}
+
+.platillos img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1.5px solid #000000;
+}
+
+.platillos .descripcion {
+  flex-grow: 1;
+  padding-left: 20px; /* Añadir algo de espacio entre la imagen y la descripción */
+  max-width: 340px; 
+}
+
+.platillos .descripcion h2 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.platillos .descripcion h3{
+  font-size: 25px;
+}
+.platillos .descripcion p {
+  margin-top: 0;
+  text-align:left;
+}
+
+.platillos .precio {
+  font-weight: bold;
+  text-align: center;
+  border-radius: 10px;
+  border: 1.5px solid #000000;
+  padding: 10px;
+  color: white;
+  background-color: #A22417;
+  font-size: 20px;
+  margin: 0 15px; /* Espacio a los lados del borde */
+
+}
+
+.total-pagar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #000000;
+}
+
+.total-pagar p {
+  margin-top: 0;
+  text-align: center;
+  font-size: 24px;
+  padding-right: 60px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.total-pagar span{
+  display: flex;
+  font-weight: bold;
+  background-color: #b22222;
+  color: white;
+  padding: 15px 15px;
+  border-radius: 15px;
+  position: relative;
+  align-items: center;
+  font-size: 1.2em;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+
+button.realizar-pago {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #A22417;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px; /* Añadir margen superior para separar */
+}
+
+/* Estilo para el botón "Regresar" */
+#regresar {
+  background-color: #e39694;
+  color: #000000;
+  padding: 10px 60px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+
+#opcionesEntrega {
+  display: block; /* Asegura que el div esté visible cuando se muestra */
+  margin-top: 20px; /* Espacio superior para separarlo de otros elementos */
+}
+
+#opcionEntrega {
+  width: 100%; /* Ancho completo del div contenedor */
+  padding: 10px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño de fuente */
+  border: 1px solid #ccc; /* Borde del select */
+  border-radius: 5px; /* Bordes redondeados */
+  outline: none; /* Elimina el contorno al recibir foco */
+  transition: border-color 0.3s ease; /* Transición suave para el color del borde */
+}
+
+#opcionEntrega:focus {
+  border-color: #007bff; /* Cambia el color del borde al recibir foco */
+}
+
+button.cancelar-pedido {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #D9534F; /* Color de fondo rojo para indicar cancelación */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-top: 10px; /* Ajuste el margen superior si es necesario */
+}
+
+
+#confirmacionCancelar {
+  display: none;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 425px;
+  margin-top: 20px;
+  z-index: 9999;
+}
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  z-index: 1000;
+}
+
+#confirmacionCancelar p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#confirmacionCancelar button {
+  background-color: #A22417;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 10px;
+  margin-bottom: 10px;
+  font-size: 23px;
+}
+
+#confirmacionCancelar button:hover {
+  background-color: #8b1b0f;
+}
+
+#contador {
+  font-size: 20px;
+  text-align: left;
+  margin:0;
+  margin-top: 15px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+footer button {
+    padding: 10px 0px;
+    background-color: #5c4033;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 60px;
+    margin-left: 60px;
+    
+}
+
+footer button.aceptar {
+    background-color: #4CAF50;
+    padding:10px;
+    padding: 15px 15px;
+    font-size: 24px;
+}
+
+footer button.cancelar {
+    background-color: #f44336;
+    padding:10px;
+    padding: 15px 15px;
+    font-size: 24px;
+}
+
+

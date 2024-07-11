@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador - Chino Brasa</title>
+    <link href="css/admin.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Teachers&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/pollo-icon.png">
+</head>
+<body>
+    <main>
+        <div class="BloqueInicioSesion">
+            <h2>Iniciar Sesión</h2>
+            <form  method="post" action="LogInAdmin.php">
+                <div class="correoIni">
+                    <label for="correoInicio">Correo electrónico:</label><br>
+                    <input type="email" id="correoInicio" name="correoInicio" placeholder="ejemplo@gmail.com" required="" style="width: calc(126% - 90px); display: inline-block; border-radius: 7px;"><br>
+                </div>
+                <div class="contra">  
+                    <label for="contrasena">Contraseña:</label><br>
+                    <div class="inputWithButton">
+                        <input type="password" id="contrasena" name="contrasena" placeholder="Ingrese su contraseña" required="" style="width: calc(126% - 90px); display: inline-block; border-radius: 7px; padding: 8px 30px 8px 8px;">
+                        <button type="button" id="togglePassword">Mostrar</button>
+                    </div>
+                </div>
+                <div class="btnIniciarSesion">  
+                    <input type="submit" value="Iniciar Sesión">
+                </div>
+                <div class="btnNoRegistrado">
+                    <p class="message">¿Olvidaste tu contraseña? <a href="#" onclick="mostrarPopup('popupRestablecer'), cerrarPopup('popupInicioSesion')">Haz clic para restablecer</a></p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+        <p>
+            Copyright &copy; 2024 🍗 El Chino Brasa 🍗
+        </p>
+    </section>
+    <!-- footer section -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const togglePassword = document.getElementById('togglePassword');
+            const contrasena = document.getElementById('contrasena');
+    
+            togglePassword.addEventListener('click', function() {
+                const tipo = contrasena.getAttribute('type') === 'password' ? 'text' : 'password';
+                contrasena.setAttribute('type', tipo);
+                togglePassword.textContent = tipo === 'password' ? 'Mostrar' : 'Ocultar';
+            });
+        });
+    </script>
+</body>
+</html>
